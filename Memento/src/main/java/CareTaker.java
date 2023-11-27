@@ -2,26 +2,24 @@ package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class CareTaker {
-    private List<Memento> editorStateList = new ArrayList<>();
+    private Stack<Memento> mementoList = new Stack<>();
 
     public CareTaker() {
     }
 
-    public CareTaker(List<Memento> editorStateList) {
-        this.editorStateList = editorStateList;
+    public CareTaker(Stack<Memento> mementoList) {
+        this.mementoList = mementoList;
     }
 
     public Memento pop (){
-        var lastItemIndex = editorStateList.size()-1;
-        var  lastState = editorStateList.get(lastItemIndex);
-        editorStateList.remove(lastState);
-        return lastState;
+        return mementoList.pop();
     }
 
-    public void push(Memento editorState){
-        editorStateList.add(editorState);
+    public void push(Memento memento){
+        mementoList.push(memento);
     }
 
     public void getHistory() {
