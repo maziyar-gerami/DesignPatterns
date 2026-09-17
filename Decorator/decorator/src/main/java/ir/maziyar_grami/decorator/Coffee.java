@@ -1,9 +1,6 @@
 package ir.maziyar_grami.decorator;
 
-public class Coffee {
+public interface Coffee {
     
-    void make(){
-
-        System.out.print("make cofee");
-    }
+    void make();
 }
