@@ -1,16 +1,17 @@
 package ir.maziyar_grami.decorator;
 
-public class CoffeeWithMilk implements Coffee {
+public class CoffeeWithSugar implements Coffee {
 
     private Coffee coffee;
 
-    public CoffeeWithMilk(Coffee coffee){
+    public CoffeeWithSugar(Coffee coffee){
         this.coffee = coffee;
     }
 
     @Override
     public void make() {
         coffee.make();
-        System.out.print(" with milk");
+        System.out.print(" with sugar");
     }
+    
 }
