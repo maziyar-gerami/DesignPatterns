@@ -18,3 +18,4 @@
 /Memento/Exercise/Kotlin/.idea/codeStyles/Project.xml
 /Memento/Exercise/Java/.idea/vcs.xml
 /Memento/Exercise/Kotlin/.idea/vcs.xml
+**/target/*
